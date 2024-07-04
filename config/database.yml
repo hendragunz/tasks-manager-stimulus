@@ -21,7 +21,11 @@ default: &default
 
 development:
   <<: *default
+  host: <%= ENV["DB_HOST_DEV"] || 'localhost' %>
   database: mycars_development
+  database: <%= ENV["DB_DEVELOPMENT"] || 'mycars_development'%>
+  username: <%= ENV["DB_USERNAME"] %>
+  password: <%= ENV["DB_PASSWORD"] %>
 
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
@@ -55,7 +59,8 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: mycars_test
+  host: <%= ENV["DB_HOST_TEST"] || 'localhost' %>
+  database: <%= ENV["DB_TEST"] || 'mycars_test %>
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -79,6 +84,8 @@ test:
 #
 production:
   <<: *default
-  database: mycars_production
+  database: <%= ENV["DB_PRODUCTION"] || 'mycars_production' %>
   username: mycars
   password: <%= ENV["MYCARS_DATABASE_PASSWORD"] %>
+  username: <%= ENV["DB_USERNAME"] %>
+  password: <%= ENV["DB_PASSWORD"] %>
