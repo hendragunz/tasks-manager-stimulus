@@ -1,4 +1,8 @@
 .container.mx-auto.pt-5
 
   h1.text-5xl Welcome to MyCars
-  p.text-base.font-light Here is the page details
+  p.text-base.font-light.leading-relaxed Here is the page details
+
+  = content_tag(:div, "test stimulus", data: { controller: 'counter' }) do
+    = content_tag(:p, "You haven't clicked the button", data: { counter_target: "output" })
+    = content_tag(:button, "Click me", data: { action: "click->counter#increment" }, class: 'bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded')
