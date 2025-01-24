@@ -1,6 +1,7 @@
 {
   "engines": {
-    "node": "20.x"
+    "node": "20.x",
+    "yarn": "1.22.22"
   },
   "dependencies": {
     "yarn": "^1.22.22"
