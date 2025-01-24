@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is small rails application using Ruby on Rails with stacks:
+- TailwindCSS (CSS)
+- Postgres (database)
+- Slim (template engine)
+- Hotwire + Stimulus
 
-Things you may want to cover:
 
-* Ruby version
+# About
 
-* System dependencies
+This is to demo how we use Stimulus + Hotwire using simple app (task manager)
 
-* Configuration
+# Demo
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+https://task-stimulus-0522d2d66c02.herokuapp.com/
