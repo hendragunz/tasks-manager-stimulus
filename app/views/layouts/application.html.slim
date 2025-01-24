@@ -10,10 +10,7 @@ html
     = stylesheet_link_tag "application", "data-turbo-track": "reload"
     = javascript_importmap_tags
 
-    css:
-      .gradient {
-        background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
-      }
 
-  body(class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;")
-    = yield
+  body
+    .mx-auto.my-5.max-w-xl(class="w-3/4" id="main-body")
+      = yield

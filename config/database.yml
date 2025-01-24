@@ -22,7 +22,6 @@ default: &default
 development:
   <<: *default
   host: <%= ENV["DB_HOST_DEV"] || 'localhost' %>
-  database: mycars_development
   database: <%= ENV["DB_DEVELOPMENT"] || 'mycars_development'%>
   username: <%= ENV["DB_USERNAME"] %>
   password: <%= ENV["DB_PASSWORD"] %>
