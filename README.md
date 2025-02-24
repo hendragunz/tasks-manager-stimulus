@@ -18,4 +18,4 @@ For Check/Uncheck the Tasks, are using Turbo stream
 
 # Demo
 
-https://task-stimulus-0522d2d66c02.herokuapp.com/
+[Feel free to ask me to deploy this to heroku]
