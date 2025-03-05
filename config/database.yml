@@ -22,7 +22,7 @@ default: &default
 development:
   <<: *default
   host: <%= ENV["DB_HOST_DEV"] || 'localhost' %>
-  database: <%= ENV["DB_DEVELOPMENT"] || 'mycars_development'%>
+  database: <%= ENV["DB_DEVELOPMENT"] || 'tasks_development'%>
   username: <%= ENV["DB_USERNAME"] %>
   password: <%= ENV["DB_PASSWORD"] %>
 
@@ -59,7 +59,7 @@ development:
 test:
   <<: *default
   host: <%= ENV["DB_HOST_TEST"] || 'localhost' %>
-  database: <%= ENV["DB_TEST"] || 'mycars_test' %>
+  database: <%= ENV["DB_TEST"] || 'tasks_test' %>
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -83,7 +83,7 @@ test:
 #
 production:
   <<: *default
-  database: <%= ENV["DB_PRODUCTION"] || 'mycars_production' %>
+  database: <%= ENV["DB_PRODUCTION"] || 'tasks_production' %>
   username: mycars
   password: <%= ENV["MYCARS_DATABASE_PASSWORD"] %>
   username: <%= ENV["DB_USERNAME"] %>

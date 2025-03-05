@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # cores
-ruby "3.3.0"
+ruby "3.3.6"
 gem "rails", "~> 7.1.3", ">= 7.1.3.2"
 gem "sprockets-rails"
 gem "pg", "~> 1.1"
